@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+canvas{
+    border: 5px solid white;
+    width: 400px;
+}
+.canvashide{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    align-items: center;
+    width:800px;
+}
+.extracthide{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    align-items: center;
+    width:400px;
+}
+.con{
+    font-size: 1.2em;
+}
+.faceupload{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+@media  screen and (max-width:600px) {
+    .canvashide{
+        display: block;
+        width:300px;
+    }
+    .faceupload{
+        display: block;
+    }
+    canvas{
+        width:300px;
+    }
+    .extracthide{
+        width:300px;
+    }
+    
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HIDE INFORMATION</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+</head>
+
+<body style="background: radial-gradient(circle, rgba(1,0,10,1) 34%, rgba(0,0,89,1) 100%);">
+  <app-root></app-root>
+  <app-home></app-home>
+  <hr class="text-light">
+  <h1 class="text-light text-center">HIDE IMAGE</h1>
+  <hr class="text-light">
+  <div class="canvashide">
+    <canvas id="face"></canvas>
+    <canvas id="hide"></canvas>
+  </div>
+  <div class="text-center con">
+    <div class=" text-primary fw-bold">FACE IMAGE:
+      <input type="file" class="btn btn-primary" multiple="false" accept="image/*" id="faceimage"
+        onchange="loadShowImage()">
+    </div>
+    <div class="text-success fw-bold item">
+      HIDE IMAGE:
+      <input type="file" class="btn btn-success" multiple="false" accept="image/*" id="hideimage"
+        onchange="loadHiddenImage()">
+    </div>
+  </div>
+  <br>
+  <div class="text-center">
+    <input type="button" class="btn btn-outline-warning" id="hidetheimage" onclick="printCombine()" value="Hide Image">
+    <input type="button" class="btn btn-outline-danger" onclick="clearCanvas()" value="Clear Canvas">
+    <hr>
+    <div class="card text-white bg-primary border-warning border-5 mb-3" style="max-width: 18rem;padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;">
+      <div class="card-header">NOTE</div>
+      <div class="card-body bg-danger">
+        <p class="card-text">Pixels of both the image should be same.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <h1 class="text-light text-center">EXTRACT IMAGE</h1>
+  <hr class="text-light">
+  <div class="extracthide">
+    <canvas id="extract"></canvas>
+  </div>
+  <p class="text-warning fw-bold text-center" style="font-size: 1.2em;">
+    <br>Extract Image:
+    <input type="file" class="btn btn-warning" multiple="false" accept="image/*" id="extractHiddenImage"
+      onchange="loadextractHiddenImage()">
+    <input type="button" class="btn btn-outline-light" onclick="extractHiddenImage()" value="Extract Image">
+  </p>
+  <script src="custom/hide.js"></script>
+</body>
+
+</html>
